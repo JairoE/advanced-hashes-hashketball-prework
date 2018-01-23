@@ -118,7 +118,7 @@ end
 
 def num_points_scored(name)
   game_hash.each do |team, stuff|
-    team.keys[-1].each do |nombre|
+    team.values[-1].each do |nombre|
       if nombre == name
         return team.keys[-1][name][:points]
       end
