@@ -171,16 +171,11 @@ def player_numbers(team_name)
               end
             end
 
-    #
-    # team_data.each do |attribute, data|
-    #   if attribute == team_name
-    #     if data.instance_of?(Hash)
-    #       nums = data.map do |nombre, stuff|
-    #                 stuff[:number]
-    #               end
-    #       return nums
-    #
-    #       end
-    #     end
-    #   end
-    # end
+def player_stats(name)
+  game_hash.each do |location, team_data|
+    team_data.each do |attribute, data|
+      return data[:players][name]
+    end
+  end
+  
+end
