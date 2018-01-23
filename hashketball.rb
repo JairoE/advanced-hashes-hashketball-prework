@@ -194,5 +194,5 @@ def big_shoe_rebounds
   num_points_scored[biggest_shoe.values[0]]
 
 end
-              
+
   
