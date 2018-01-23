@@ -122,9 +122,8 @@ def num_points_scored(name)
     team_data.each do |attribute, data|
       if data.instance_of?(Hash)
         data.each do |nombre, stuff|
-
           if nombre == name
-            return nombre[:points]
+            return stuff[:points]
           end
         end
       end
