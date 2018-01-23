@@ -121,6 +121,7 @@ def num_points_scored(name)
     team_data.each do |attribute, data|
       if data.instance_of?(Hash)
         data.each do |item|
+          binding.pry
           if item == name
             return item[:points]
           end
