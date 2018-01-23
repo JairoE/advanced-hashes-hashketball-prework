@@ -152,3 +152,24 @@ def team_colors(name)
     end
   end
 end
+
+def team_names(game_hash)
+  game_hash.map do |location,team_data|
+    team_data[:team_name]
+  end
+end
+
+def player_numbers(team_name)
+  game_hash.each do |location, team_data|
+    team_data.each do |attribute, data|
+      if attribute == team_data == team_name
+        if data.instance_of?(Hash)
+          return data.map do |nombre, stuff|
+                    stuff[:number]
+                  end
+                end
+              end
+            end
+          end
+              
+end
