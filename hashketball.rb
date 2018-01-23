@@ -122,7 +122,7 @@ def num_points_scored(name)
       if data.instance_of?(Hash)
         data.each do |item|
           if item == name
-            return game_hash[location][attribute][data][name][:points]
+            return item[:points]
           end
         end
       end
