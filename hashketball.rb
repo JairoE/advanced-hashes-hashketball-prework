@@ -175,6 +175,6 @@ def player_stats(name)
   game_hash.each do |location, team_data|
       return teanm_data[:players][name]
     end
-  end
+
 
 end
