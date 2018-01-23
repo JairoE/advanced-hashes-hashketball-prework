@@ -177,5 +177,5 @@ def player_stats(name)
       return data[:players][name]
     end
   end
-  
+
 end
