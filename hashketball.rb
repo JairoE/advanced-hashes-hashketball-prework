@@ -162,7 +162,7 @@ end
 def player_numbers(team_name)
   game_hash.each do |location, team_data|
     team_data.each do |attribute, data|
-      if attribute == team_data && attribute == team_name
+      if attribute == team_name && attribute == team_name
         if data.instance_of?(Hash)
           return data.map do |nombre, stuff|
                     stuff[:number]
