@@ -164,11 +164,13 @@ def player_numbers(team_name)
     team_data.each do |attribute, data|
       if attribute == team_name
         if data.instance_of?(Hash)
-          return data.map do |nombre, stuff|
+          nums = data.map do |nombre, stuff|
                     stuff[:number]
                   end
-                end
-              end
-            end
+          return nums
+
           end
+        end
+      end
+    end
   end
